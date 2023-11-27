@@ -14,12 +14,56 @@
 }
 
 #banner #logo-container {
-	letter-spacing: 2rem;
+	letter-spacing: 1.3rem;
 	z-index: 10;
 	background-image: linear-gradient(to bottom, transparent, 30%, rgba(0,0,0,0.7), 95%, transparent);
 }
 
 #banner img {
-	width: 200px;
+	width: 170px;
+	user-select: none;
 }
 
+#restaurant-name {
+	transform: translateX(3%);
+	user-select: none;
+}
+
+#chevron-container {
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-100%);
+}
+
+#chevron {
+	bottom: 10px;
+	font-size: 2rem;
+/*
+	animation-name: down-sign;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+*/
+}
+
+#chevron2{
+	bottom: 30px;
+	font-size: 2rem;
+/*
+	animation-name: down-sign;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+*/
+}
+
+/*
+@keyframes down-sign {
+
+}	
+*/
+
+
+.container-fluid {
+	background: #1E040C; /* #2B1119; */
+}
