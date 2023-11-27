@@ -1,0 +1,19 @@
+{
+  "name": "restocafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugsdev2/restocafe.git"
+  },
+  "author": "bugsdev2",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bugsdev2/restocafe/issues"
+  },
+  "homepage": "https://github.com/bugsdev2/restocafe#readme"
+}

@@ -1,0 +1,25 @@
+
+
+#banner {
+	background-image: url('/public/images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#banner #darken {
+	background: rgba(0,0,0,0.54);
+}
+
+#banner #logo-container {
+	letter-spacing: 2rem;
+	z-index: 10;
+	background-image: linear-gradient(to bottom, transparent, 30%, rgba(0,0,0,0.7), 95%, transparent);
+}
+
+#banner img {
+	width: 200px;
+}
+
