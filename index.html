@@ -24,27 +24,84 @@
 			</a>
 		</button>
 	</div>
-		<nav id ="nav" class="border border-dark w-100">
-			<ul class="nav nav-tabs d-flex justify-content-center">
-				<li class="nav-item">
-					<a href="#" class="nav-link text-dark">Home</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link active text-black">About</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link text-dark">Dining</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link text-dark">Booking</a>
-				</li>
-				
-			</ul>
-		</nav>
-	<div class="container-fluid text-light">
-		<div class="container-lg">
-			<h2>Hello</h2>
+	<nav id ="nav" class="border border-dark w-100">
+		<ul class="nav nav-tabs d-flex justify-content-center gap-3">
+			<li class="nav-item">
+				<a href="#" class="nav-link">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#About" class="nav-link" data-bs-toggle="tab">About</a>
+			</li>
+			<li class="nav-item">
+				<a href="#Dining" class="nav-link" data-bs-toggle="tab">Dining</a>
+			</li>
+			<li class="nav-item">
+				<a href="#Booking" class="nav-link active" data-bs-toggle="tab">Booking</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="tab-content m-3 p-4">
+		<div class="tab-pane" id="About">
+			About
 		</div>
+		<div class="tab-pane" id="Dining">
+			Dining
+		</div>
+		<div class="tab-pane active show" id="Booking">
+			<div class="text-center h3">Hotel Booking Form</div>
+			<div>
+				<ol class="nav nav-tab d-flex justify-content-center py-3 gap-3">
+					<li class="nav-item active">
+							<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#one"">Step I</a>
+					</li>
+					<li class="d-flex align-items-center"> <span>>></span></li>
+					<li class="nav-item">
+							<a href="#" class="nav-link active show" data-bs-toggle="tab" data-bs-target="#two">Step II</a>
+					</li>
+					<li class="d-flex align-items-center"> <span>>></span></li>
+					<li class="nav-item">
+							<a href="#" class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#three">Step III</a>
+					</li>
+					<li class="d-flex align-items-center"> <span>>></span></li>
+					<li class="nav-item">
+							<a href="#" class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#four">Step IV</a>
+					</li>
+				</ol>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane fade border border-secondary rounded-3" id="one">
+					<div id="customer-info-title" class="text-center h3 text-light p-1 rounded-top-2">Customer Information</div>
+					<form class="d-flex flex-column p-3">
+						<dl id="customer-info">
+							<dt>Customer Name</dt>
+							<dd><input class="form-control" type="text" name="name" id="name"   /></dd>
+							<dt>Check-in Date</dt>
+							<dd><input class="form-control" type="date" name="date" id="date" /></dd>
+							<dt>No. of Days</dt>
+							<dd><input class="form-control" type="number" name="days" id="days" /></dd>
+							<dt>No. of People</dt>
+							<dd><input class="form-control" type="number" name="people" id="people" /></dd>
+						</dl>
+						<button type="button" class="btn align-self-center">Continue</button>
+					</form>
+				</div>
+				<div class="tab-pane fade show active border border-secondary rounded-3" id="two">
+					<div id="customer-info-title" class="text-center h3 text-light p-1 rounded-top-2">Select Room Type</div>
+					
+				</div>
+				<div class="tab-pane fade" id="three">
+					Hello! Three
+				</div>
+				<div class="tab-pane fade" id="four">
+					Hello! Four
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container ">
+		
+		
+		
 		<br />
 		<br />
 		<br />

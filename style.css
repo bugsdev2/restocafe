@@ -38,32 +38,52 @@
 #chevron {
 	bottom: 10px;
 	font-size: 2rem;
-/*
-	animation-name: down-sign;
-	animation-duration: 0.8s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-*/
 }
 
 #chevron2{
 	bottom: 30px;
 	font-size: 2rem;
+}
+
+
+
+
+.container {
 /*
-	animation-name: down-sign;
-	animation-duration: 0.8s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+	background: #1E040C;
 */
 }
 
-/*
-@keyframes down-sign {
-
-}	
-*/
-
-
-.container-fluid {
-	background: #1E040C; /* #2B1119; */
+.nav-link:link {
+	color: #400819;
 }
+.nav-link:visited {
+	color: #400819;
+}
+.nav-link:hover {
+	color: #400819;
+}
+.nav-link:active {
+	color: #400819;
+}
+
+#Booking .h3 {
+	color: #400819;
+}
+
+#customer-info-title {
+	background: #400819;
+}
+
+#customer-info {
+	display: grid;
+	grid-template-columns: 4fr 8fr;
+	align-items: center;
+}
+
+#one button {
+	background: #400819;
+	color: white;
+}
+
+
