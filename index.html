@@ -50,26 +50,26 @@
 		<div class="tab-pane active show" id="Booking">
 			<div class="text-center h3">Hotel Booking Form</div>
 			<div>
-				<ol class="nav nav-tab d-flex justify-content-center py-3 gap-3">
+				<ol class="nav nav-tab d-flex justify-content-center py-3 gap-2">
 					<li class="nav-item active">
-							<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#one"">Step I</a>
+							<a href="#" class="nav-link show active" data-bs-toggle="tab" data-bs-target="#one">Step I</a>
 					</li>
 					<li class="d-flex align-items-center"> <span>>></span></li>
 					<li class="nav-item">
-							<a href="#" class="nav-link active show" data-bs-toggle="tab" data-bs-target="#two">Step II</a>
+							<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#two">Step II</a>
 					</li>
 					<li class="d-flex align-items-center"> <span>>></span></li>
 					<li class="nav-item">
-							<a href="#" class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#three">Step III</a>
+							<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#three">Step III</a>
 					</li>
 					<li class="d-flex align-items-center"> <span>>></span></li>
 					<li class="nav-item">
-							<a href="#" class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#four">Step IV</a>
+							<a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#four">Step IV</a>
 					</li>
 				</ol>
 			</div>
 			<div class="tab-content">
-				<div class="tab-pane fade border border-secondary rounded-3" id="one">
+				<div class="show active tab-pane fade border border-secondary rounded-3" id="one">
 					<div id="customer-info-title" class="text-center h3 text-light p-1 rounded-top-2">Customer Information</div>
 					<form class="d-flex flex-column p-3">
 						<dl id="customer-info">
@@ -82,18 +82,80 @@
 							<dt>No. of People</dt>
 							<dd><input class="form-control" type="number" name="people" id="people" /></dd>
 						</dl>
-						<button type="button" class="btn align-self-center">Continue</button>
+						<button type="button" class="btn align-self-center">Proceed to the Next Step</button>
 					</form>
 				</div>
-				<div class="tab-pane fade show active border border-secondary rounded-3" id="two">
-					<div id="customer-info-title" class="text-center h3 text-light p-1 rounded-top-2">Select Room Type</div>
-					
+				<div class="tab-pane fade border border-secondary rounded-3" id="two">
+					<div id="room-type" class="text-center h3 text-light p-1 rounded-top-2">Select Room Type</div>
+					<div class="container d-flex flex-column">
+						<div class="row text-center d-flex gap-3 p-3">
+							<div class="col">
+								
+								<img src="public/images/delux-room.jpg" width="200" />
+								<div>
+									<label class="form-check-label me-1" for="delux">Delux Room</label>
+									<input class="form-check-input" type="radio" name="room" id="delux" value="delux" />
+								</div>
+								<div>Rs. 2500/-</div>
+							</div>
+							<div class="col ">
+								<img src="public/images/suite-room.jpg" width="200" />
+								<div>
+									<label class="form-check-label me-1" for="suite">Suite Room</label>
+									<input class="form-check-input" type="radio" name="room" id="suite" value="suite"/>
+								</div>
+								<div>Rs. 4000/-</div>
+							</div>
+						</div>
+						<button type="button" class="btn align-self-center mb-3">Proceed to the Next Step</button>
+					</div>
 				</div>
-				<div class="tab-pane fade" id="three">
-					Hello! Three
+				<div class="tab-pane fade border border-secondary rounded-3" id="three">
+					<div id="amenities" class="text-center h3 text-light p-1 rounded-top-2">Select Amenities</div>
+					<div class="container d-flex flex-column">
+						<div class="row text-center d-flex gap-3 p-3">
+							
+							<div class="col">
+								
+								<img src="public/images/ac.jpg" height="150" />
+								<div>
+									<label class="form-check-label me-1" for="ac">Room with AC</label>
+									<input class="form-check-input" type="checkbox" name="amenities" id="ac" value="ac" />
+								</div>
+								<div>Rs. 1000/-</div>
+							</div>
+							<div class="col ">
+								<img src="public/images/locker.jpg" height="150" />
+								<div> 
+									<label class="form-check-label me-1" for="locker">Room with Locker</label>
+									<input class="form-check-input" type="checkbox" name="amenities" id="locker" value="locker"/>
+								</div>
+								<div>Rs. 300/-</div>
+							</div>
+							<div id="note">(Note: You can choose both options)</div>
+						</div>
+						<button type="button" class="btn align-self-center mb-3">Proceed to the Next Step</button>
+					</div>
 				</div>
-				<div class="tab-pane fade" id="four">
-					Hello! Four
+				<div class="tab-pane fade border border-secondary rounded-3" id="four">
+					<div id="advance" class="text-center h3 text-light p-1 rounded-top-2">Pay Advance Amount</div>
+					<div class="container d-flex flex-column">
+						<div class="row text-center p-3 d-flex align-items-center">
+							<div class="col-sm-12 col-md-6">
+								<label class="form-label" for="advance-amount">Advance Amount</label>
+							</div>
+							<div class="col-sm-12 col-md-6 d-flex align-items-center gap-2">
+								<span>Rs.</span>
+								<input class="form-control" type="text" name="advance-amount" id="advance-amount" placeholder="1000"/>
+							</div>
+						</div>
+						<div class="border px-3 py-2 mb-2">
+							<div id="note">Please note that an advance of minimum Rs.1000/- is mandatory to reserve the room.</div>
+							<div id="note">You can also choose to pay the more than the minimum amount to avail special offers.</div>
+							<div id="note">Please contact the hotel management to know the available offers.</div>
+						</div>
+						<button type="button" class="btn align-self-center mb-3">Pay</button>
+					</div>
 				</div>
 			</div>
 		</div>

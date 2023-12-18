@@ -71,7 +71,10 @@
 	color: #400819;
 }
 
-#customer-info-title {
+#customer-info-title,
+#room-type,
+#amenities,
+#advance {
 	background: #400819;
 }
 
@@ -81,9 +84,23 @@
 	align-items: center;
 }
 
-#one button {
+
+
+#one button,
+#two button,
+#three button,
+#four button {
 	background: #400819;
 	color: white;
 }
 
+#note {
+	font-size: 0.8rem;
+}
 
+
+@media screen and (max-width: 412px) {
+	#customer-info {
+		grid-template-columns: 1fr;
+	}
+}
