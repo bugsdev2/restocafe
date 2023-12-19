@@ -30,24 +30,30 @@
 				<a href="#" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="#About" class="nav-link" data-bs-toggle="tab">About</a>
+				<a href="#About" class="nav-link show active" data-bs-toggle="tab">About</a>
 			</li>
 			<li class="nav-item">
 				<a href="#Dining" class="nav-link" data-bs-toggle="tab">Dining</a>
 			</li>
 			<li class="nav-item">
-				<a href="#Booking" class="nav-link active" data-bs-toggle="tab">Booking</a>
+				<a href="#Booking" class="nav-link" data-bs-toggle="tab">Booking</a>
 			</li>
 		</ul>
 	</nav>
-	<div class="tab-content m-3 p-4">
-		<div class="tab-pane" id="About">
-			About
+	<div id="main-area" class="tab-content p-4 ">
+		<div class="tab-pane p-3 rounded-4 show active" id="About">
+			<div class="d-flex justify-content-center my-3">
+				<img src="public/images/resto-bg-2.png" height="200" />
+			</div>
+			<p>Welcome to RestoCafe, where culinary excellence meets warm hospitality in a harmonious blend. Nestled in the heart of Hyderabad, RestoCafe embodies a haven for food enthusiasts seeking an exquisite dining experience. Our story begins with a passion for flavors, an ode to creativity, and a commitment to crafting memorable moments for every guest who walks through our doors.</p>
+			<p>At RestoCafe, our menu is a symphony of diverse tastes curated from local, seasonal ingredients and global inspirations. From the crackling sound of freshly baked bread to the aromatic waft of robust coffee, every detail is meticulously designed to tantalize your senses. Whether you crave the comfort of classic dishes or yearn to explore innovative culinary adventures, our chefs pour their expertise into each plate, ensuring a delightful journey through every bite.</p>
+			<p>Beyond the culinary delights, RestoCafe is a vibrant tapestry woven with the threads of community and conviviality. Our inviting ambiance, adorned with tasteful decor and soothing melodies, invites laughter, intimate conversations, and celebrations. With a team dedicated to personalized service and a commitment to fostering connections, RestoCafe invites you to savor not just a meal, but an experience that lingers in your memory long after the last bite.</p>
+			<p>Come, indulge in the essence of flavor, camaraderie, and culinary artistry at RestoCafe—a place where every meal tells a story, and every visit feels like coming home.</p>
 		</div>
 		<div class="tab-pane" id="Dining">
-			Dining
+			
 		</div>
-		<div class="tab-pane active show" id="Booking">
+		<div class="tab-pane p-3 rounded-4" id="Booking">
 			<div class="text-center h3">Hotel Booking Form</div>
 			<div>
 				<ol class="nav nav-tab d-flex justify-content-center py-3 gap-2">
@@ -74,15 +80,15 @@
 					<form class="d-flex flex-column p-3">
 						<dl id="customer-info">
 							<dt>Customer Name</dt>
-							<dd><input class="form-control" type="text" name="name" id="name"   /></dd>
+							<dd><input class="form-control" type="text" name="name" id="name"  required /></dd>
 							<dt>Check-in Date</dt>
-							<dd><input class="form-control" type="date" name="date" id="date" /></dd>
+							<dd><input class="form-control" type="date" name="date" id="date" required /></dd>
 							<dt>No. of Days</dt>
-							<dd><input class="form-control" type="number" name="days" id="days" /></dd>
+							<dd><input class="form-control" type="number" min="1" name="days" id="days" required /></dd>
 							<dt>No. of People</dt>
-							<dd><input class="form-control" type="number" name="people" id="people" /></dd>
+							<dd><input class="form-control" type="number" min="1" name="people" id="people" required /></dd>
 						</dl>
-						<button type="button" class="btn align-self-center">Proceed to the Next Step</button>
+						<button type="button" class="btn align-self-center">Continue</button>
 					</form>
 				</div>
 				<div class="tab-pane fade border border-secondary rounded-3" id="two">
@@ -92,22 +98,22 @@
 							<div class="col">
 								
 								<img src="public/images/delux-room.jpg" width="200" />
-								<div>
-									<label class="form-check-label me-1" for="delux">Delux Room</label>
-									<input class="form-check-input" type="radio" name="room" id="delux" value="delux" />
+								<div class="mt-1">
+									<label class="form-check-label me-1 fw-bold" for="delux">Delux Room</label>
+									<input class="form-check-input" type="radio" name="room" id="delux" value="delux" checked/>
 								</div>
 								<div>Rs. 2500/-</div>
 							</div>
 							<div class="col ">
 								<img src="public/images/suite-room.jpg" width="200" />
-								<div>
-									<label class="form-check-label me-1" for="suite">Suite Room</label>
+								<div class="mt-1">
+									<label class="form-check-label me-1 fw-bold" for="suite">Suite Room</label>
 									<input class="form-check-input" type="radio" name="room" id="suite" value="suite"/>
 								</div>
 								<div>Rs. 4000/-</div>
 							</div>
 						</div>
-						<button type="button" class="btn align-self-center mb-3">Proceed to the Next Step</button>
+						<button type="button" class="btn align-self-center mb-3">Continue</button>
 					</div>
 				</div>
 				<div class="tab-pane fade border border-secondary rounded-3" id="three">
@@ -118,35 +124,35 @@
 							<div class="col">
 								
 								<img src="public/images/ac.jpg" height="150" />
-								<div>
-									<label class="form-check-label me-1" for="ac">Room with AC</label>
+								<div class="mt-1">
+									<label class="form-check-label me-1 fw-bold" for="ac">Room with AC</label>
 									<input class="form-check-input" type="checkbox" name="amenities" id="ac" value="ac" />
 								</div>
 								<div>Rs. 1000/-</div>
 							</div>
 							<div class="col ">
 								<img src="public/images/locker.jpg" height="150" />
-								<div> 
-									<label class="form-check-label me-1" for="locker">Room with Locker</label>
+								<div class="mt-1"> 
+									<label class="form-check-label me-1 fw-bold" for="locker">Room with Locker</label>
 									<input class="form-check-input" type="checkbox" name="amenities" id="locker" value="locker"/>
 								</div>
 								<div>Rs. 300/-</div>
 							</div>
 							<div id="note">(Note: You can choose both options)</div>
 						</div>
-						<button type="button" class="btn align-self-center mb-3">Proceed to the Next Step</button>
+						<button type="button" class="btn align-self-center mb-3">Continue</button>
 					</div>
 				</div>
 				<div class="tab-pane fade border border-secondary rounded-3" id="four">
 					<div id="advance" class="text-center h3 text-light p-1 rounded-top-2">Pay Advance Amount</div>
-					<div class="container d-flex flex-column">
+					<form class="container d-flex flex-column">
 						<div class="row text-center p-3 d-flex align-items-center">
 							<div class="col-sm-12 col-md-6">
-								<label class="form-label" for="advance-amount">Advance Amount</label>
+								<label class="form-label fw-bold" for="advance-amount">Advance Amount</label>
 							</div>
 							<div class="col-sm-12 col-md-6 d-flex align-items-center gap-2">
 								<span>Rs.</span>
-								<input class="form-control" type="text" name="advance-amount" id="advance-amount" placeholder="1000"/>
+								<input class="form-control" type="number" min="1000" name="advance-amount" id="advance-amount" placeholder="1000" value="1000" required/>
 							</div>
 						</div>
 						<div class="border px-3 py-2 mb-2">
@@ -154,38 +160,18 @@
 							<div id="note">You can also choose to pay the more than the minimum amount to avail special offers.</div>
 							<div id="note">Please contact the hotel management to know the available offers.</div>
 						</div>
-						<button type="button" class="btn align-self-center mb-3">Pay</button>
-					</div>
+						<div class="row d-flex justify-content-center gap-3">
+<!--
+							<button type="reset" class="btn align-self-center mb-3 col-2">Reset</button>
+-->
+							<button type="button" class="btn align-self-center mb-3 col-2">Continue</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container ">
-		
-		
-		
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-	</div>
+	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

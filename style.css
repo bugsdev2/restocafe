@@ -84,7 +84,29 @@
 	align-items: center;
 }
 
+#main-area {
+	background: url(public/images/resto-bg-1.jpg);
+	background-size: cover;
+}
 
+
+#Dining {
+	height: 100vh;
+	background: url(public/images/under-construction.png);
+	background-size: 450px;
+	background-position: center;
+	opacity: 0.8;
+	border-radius: 25px;
+}
+
+#About {
+	text-indent: 2rem;
+}
+
+#About,
+#Booking {
+	background: rgba(255,255,255,0.8);
+}
 
 #one button,
 #two button,
@@ -102,5 +124,9 @@
 @media screen and (max-width: 412px) {
 	#customer-info {
 		grid-template-columns: 1fr;
+	}
+	
+	#main-area img {
+		height: 150px;
 	}
 }
