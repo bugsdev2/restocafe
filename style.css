@@ -80,7 +80,7 @@
 
 #customer-info {
 	display: grid;
-	grid-template-columns: 3fr 7fr 2fr;
+	grid-template-columns: 4fr 8fr;
 	align-items: center;
 	column-gap: 0.5rem;
 }
@@ -115,6 +115,11 @@
 #four button {
 	background: #400819;
 	color: white;
+}
+
+#four input {
+	max-width: 300px;
+	text-align: center;
 }
 
 #note {
