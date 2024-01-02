@@ -100,23 +100,30 @@ $(() => {
 			alert('Advance payment of a minimum of Rs.1000/- is mandatory.');
 		} else {
 			advance = $('#advance-amount').val();
-			getSummary();
+			
+			grossTotal = (roomPrice + amenitiesPrice)*days;
+			if(people>2){
+				n = people-2;
+				for(let i=0;i<n;i++){
+					grossTotal+=1000
+				}
+			}
+			
+			netTotal = grossTotal - advance;
+	
+			if(advance>grossTotal){
+				alert('Advance cannot be greater than the total amount.');
+			} else {
+				getSummary();
+			}
+		
+			
+			
 		}
 
 	});
 	
 	function getSummary(){
-				
-		grossTotal = (roomPrice + amenitiesPrice)*days;
-		if(people>2){
-			n = people-2;
-			for(let i=0;i<n;i++){
-				grossTotal+=1000
-			}
-		}
-		
-		netTotal = grossTotal - advance;
-		
 		$('#modal').modal('show');
 		$('#payment').text(`Proceed to Pay Rs.${advance}/-`);
 		$('#summary').html(`
@@ -146,7 +153,7 @@ $(() => {
 						<dl>
 							<dt>Amenities</dt>
 							<dd>${selectedItems.join(' & ')} - Rs.${amenitiesPrice}/-<dd>
-							<dt>Gross Total</dt>
+							<dt>Total Amount</dt>
 							<dd>${grossTotal}</dd>
 							<dt>Advance Payment</dt>
 							<dd>${advance}</dd>
