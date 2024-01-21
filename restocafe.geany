@@ -28,13 +28,13 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=10292;HTML;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Frestocafe%2Findex.html;0;4
+FILE_NAME_0=1927;HTML;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Frestocafe%2Findex.html;0;4
 FILE_NAME_1=5249;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Frestocafe%2Fsrc%2Fmain.js;0;4
 FILE_NAME_2=1244;CSS;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Frestocafe%2Fstyle.css;0;4
 FILE_NAME_3=2041;JSON;0;EUTF-8;1;1;0;%2Fhome%2Fbugs%2FProjects%2Frestocafe%2Fsrc%2Fdishes.json;0;4
 
 [VTE]
-last_dir=/home/bugs/Projects/restocafe/src
+last_dir=/home/bugs/Projects/restocafe
 
 [prjorg]
 source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
