@@ -169,6 +169,41 @@ $(() => {
 	$('#payment').click(() => {
 		location.href = 'https://www.youtube.com/watch?v=K4smXP46tG4';
 	});
-	
-	
+		
 })
+
+fetch("src/dishes.json")
+	.then(res => res.json())
+	.then(dishes => {
+		const diningDiv = document.getElementById('dining');
+		const titleDiv = document.createElement('div');
+		titleDiv.className = "h4 text-center";
+		titleDiv.textContent = "Our Signature Dishes"
+		diningDiv.appendChild(titleDiv);
+		const dishesContainer = document.createElement('div');
+		dishesContainer.id = "dishes-container";
+		dishes.map(dish => {
+			const containerDiv = document.createElement('div');
+			containerDiv.setAttribute('id', "dish-container");
+			const img = document.createElement('img');
+			img.className = "rounded"
+			img.src = dish.src;
+			img.height = "150";
+			img.width = "200";
+			containerDiv.appendChild(img);
+			const detailsDiv = document.createElement('div');
+			detailsDiv.id = "details-div";
+			const titleDiv = document.createElement('div');
+			titleDiv.textContent = dish.name;
+			titleDiv.className = "h6"
+			detailsDiv.appendChild(titleDiv);
+			const descriptionDiv = document.createElement('div');
+			descriptionDiv.textContent = dish.description;
+			descriptionDiv.id = "description-div"
+			detailsDiv.appendChild(descriptionDiv);
+			containerDiv.appendChild(detailsDiv);
+			dishesContainer.appendChild(containerDiv);
+		
+		});
+		diningDiv.appendChild(dishesContainer);
+	});

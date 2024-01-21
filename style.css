@@ -92,12 +92,26 @@
 
 
 #Dining {
-	height: 100vh;
-	background: url(public/images/under-construction.png);
-	background-size: 450px;
-	background-position: center;
-	opacity: 0.8;
-	border-radius: 25px;
+	
+}
+
+#dishes-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 1rem;
+}
+
+#dish-container {
+	border: 2px solid #400819;
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+	width: 100%;
+	border-radius: 20px;
+}
+
+#description-div {
+	font-size: 0.9rem;
 }
 
 #About {
