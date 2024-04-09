@@ -2,49 +2,49 @@
 	{
 		"id": "1",
 		"name": "Chicken Alfredo",
-		"src": "../public/images/dishes/Chicken_Alfredo.jpeg",
+		"src": "public/images/dishes/Chicken_Alfredo.jpeg",
 		"description": "Sliced grilled chicken is served over tender fettuccine pasta and doused in homemade Alfredo sauce"
 	},
 	{
 		"id": "2",
 		"name": "Momma's Pancake Breakfast ",
-		"src": "../public/images/dishes/Momma's_Pancake_Breakfast.jpeg",
+		"src": "public/images/dishes/Momma's_Pancake_Breakfast.jpeg",
 		"description": "Three hot-off-the-griddle buttermilk pancakes come outfitted with butter and syrup plus two eggs and thick-sliced bacon or sausage on the side"
 	},
 	{
 		"id": "3",
 		"name": "Mongolian Style Beef",
-		"src": "../public/images/dishes/Mongolian_Style_Beef.jpeg",
+		"src": "public/images/dishes/Mongolian_Style_Beef.jpeg",
 		"description": "A garlicky soy-glazed flank steak topped with snipped green onions."
 	},
 	{
 		"id": "4",
 		"name": "Chicken Bryan",
-		"src": "../public/images/dishes/Chicken_Bryan.jpeg",
+		"src": "public/images/dishes/Chicken_Bryan.jpeg",
 		"description": "Grilled chicken topped with goat cheese, sun-dried tomatoes, basil and a lemon butter sauce"
 	},
 	{
 		"id": "5",
 		"name": "Ultimate Feast",
-		"src": "../public/images/dishes/Ultimate_Feast.jpeg",
+		"src": "public/images/dishes/Ultimate_Feast.jpeg",
 		"description": "A platter heaped with tender Maine lobster tail, steamed North American snow crab legs and garlic shrimp scampi — in addition to butterflied, hand-breaded, golden fried shrimp"
 	},
 	{
 		"id": "6",
 		"name": "Original BBQ Chicken Pizza",
-		"src": "../public/images/dishes/Original_BBQ_Chicken_Pizza.jpeg",
+		"src": "public/images/dishes/Original_BBQ_Chicken_Pizza.jpeg",
 		"description": "Hand-tossed crust topped with BBQ sauce plus smoked Gouda, red onions and fresh cilantro"
 	},
 	{
 		"id": "7",
 		"name": "Rib-Eye Steak",
-		"src": "../public/images/dishes/Rib-Eye_Steak.jpeg",
+		"src": "public/images/dishes/Rib-Eye_Steak.jpeg",
 		"description": "Hand-trimmed, 12-ounce rib-eye paired with one of six signature seasoning blends and grilled to each customer's taste"
 	},
 	{
 		"id": "8",
 		"name": "Bourbon Street Chicken and Shrimp",
-		"src": "../public/images/dishes/Bourbon_Street_Chicken_and_Shrimp.jpeg",
+		"src": "public/images/dishes/Bourbon_Street_Chicken_and_Shrimp.jpeg",
 		"description": "A heap of Cajun-seasoned chicken and blackened shrimp in garlic butter, served on a sizzling cast-iron platter along with sauteed mushrooms, onions and crispy red potatoes"
 	}
 ]
